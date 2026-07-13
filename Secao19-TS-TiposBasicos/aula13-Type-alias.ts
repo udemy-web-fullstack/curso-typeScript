@@ -10,9 +10,9 @@ type CorCMYK = 'Ciano' | 'Magenta' | 'Amarelo' | 'Preto';
 type CorPreferida = CorRGB | CorCMYK;
 
 const pessoa: Pessoa = {
-  idade: 30,
+  idade: 52,
   nome: 'Magno',
-  salario: 200_000,
+  salario: 20_000,
 };
 
 export function setCorPreferida(pessoa: Pessoa, cor: CorPreferida): Pessoa {
