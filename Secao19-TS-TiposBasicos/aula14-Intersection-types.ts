@@ -10,7 +10,7 @@ type Funcionario = TemNome & TemIdade & TemCargo;
 // Agora, ao criar o objeto, o TypeScript vai te cobrar todas as propriedades:
 const magno: Funcionario = {
   nome: 'Magno V Gomes',
-  idade: 30, // Exemplo
+  idade: 52, // Exemplo
   cargo: 'Desenvolvedor Full Stack'
 };
 
