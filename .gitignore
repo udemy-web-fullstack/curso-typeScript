@@ -20,6 +20,9 @@ pnpm-debug.log*
 .env
 .env.*
 
+# Configurações locais do VS / IDEs
+.vs/
+
 # Cache
 .eslintcache
 *.tsbuildinfo
