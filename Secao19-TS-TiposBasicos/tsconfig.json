@@ -27,6 +27,7 @@
   },
   "include": [
     "./src",
-    "./aula18-webpack"
+    "./aula18-webpack",
+    "./aula19-exercicio"
   ]
 }
