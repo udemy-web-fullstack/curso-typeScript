@@ -6,9 +6,8 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc",
-    "build:frontend": "vite build",
-    "start": "node dist/index.js"
+    "build:backend": "tsc",
+    "build:frontend": "webpack --watch"
   },
   "keywords": [],
   "author": "",
