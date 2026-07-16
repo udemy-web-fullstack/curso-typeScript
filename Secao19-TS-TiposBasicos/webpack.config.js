@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 export default {
   mode: 'development',
 
-  entry: './aula18-webpack/index.ts',
+  entry: './aula19-exercicio/index.ts',
 
   module: {
     rules: [
