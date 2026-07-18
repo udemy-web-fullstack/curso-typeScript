@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": true,
+    "sourceMap": true,
+
+    "outDir": "./dist",
+
+    "removeComments": true,
+    "noEmitOnError": true,
+
+    "strict": true,
+
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "./src",
+    "./aula18-webpack",
+    "./aula19-exercicio",
+    "Secao20-POO-Classes-Interf"
+  ]
+}
