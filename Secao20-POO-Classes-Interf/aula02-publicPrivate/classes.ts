@@ -1,6 +1,10 @@
+import { pull } from 'lodash';
+
 export class Empresa {
-  public readonly nome: string; // public não necessário
+  readonly nome: string; // public não necessário
   private readonly freelancers: Freeler[] = [];
+  // readonly freelancers: Freeler[] = [];
+  // freelancers: Freeler[] = [];
   protected readonly cnpj: string;
 
   constructor(nome: string, cnpj: string) {
@@ -17,12 +21,16 @@ export class Empresa {
       console.log(freller);
     }
   }
+  // getNome(): string { apenas para exemplificar o public
+  //   return this.nome;
+  // }
 }
+
 
 export class Freeler {
   constructor(
-    public readonly nome: string,
-    public readonly sobrenome: string
+    readonly nome: string,      // public não necessário
+    readonly sobrenome: string  // public não necessário
   ) {}
 }
 
@@ -35,15 +43,15 @@ filial1.addFreller(freeler1);
 filial1.addFreller(freeler2);
 filial1.addFreller(freeler3);
 
-console.log(filial1, '\n');
-filial1.mostrarFreller();
+// filial1.freelancers = [];
+
+// filial1.freelancers.pop();
+// filial1.freelancers.pop();
+// filial1.freelancers.pop();
+
+console.log(filial1);
 
 
-
-//Forma mais cumprida / Longa
-//   export class Empresa {
-//   public readonly nome: string;
-//   private readonly freelancers: freeler[] = [];
-//   protected readonly cnpj: string;
-// }
-
+// console.log(filial1.nome);
+// console.log(filial1.getNome(), filial1.nome, '\n');
+// filial1.mostrarFreller();

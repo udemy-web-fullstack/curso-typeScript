@@ -27,6 +27,6 @@
   },
   "include": [
     "./src",
-    "./aula18-webpack"
+    "./aula01-moldesObj"
   ]
 }
