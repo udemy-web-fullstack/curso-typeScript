@@ -4,7 +4,7 @@ export class Pessoa {
     public sobrenome: string,
     private idade: number,
     protected cpf: string,
-  ) {};
+  ) {}
 
   getIdade(): number {
     return this.idade;
@@ -17,10 +17,9 @@ export class Pessoa {
   getNomeCompleto(): string {
     return this.nome + ' ' + this.sobrenome;
   }
-};
+}
 
 export class Aluno extends Pessoa {
-
   constructor(
     nome: string,
     sobrenome: string,
@@ -34,7 +33,7 @@ export class Aluno extends Pessoa {
   getNomeCompleto(): string {
     console.log('**** antes da superclasse ****');
     const result = super.getNomeCompleto();
-    return result + " INCRIVÉLLLLLLLLL";
+    return result + ' INCRIVÉLLLLLLLLL';
   }
 }
 

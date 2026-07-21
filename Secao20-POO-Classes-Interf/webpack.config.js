@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 export default {
   mode: 'development',
 
-  entry: './aula01-moldesObj/classes.ts',
+  entry: './aula07-Atributos-metEstaticos/static.ts',
 
   module: {
     rules: [

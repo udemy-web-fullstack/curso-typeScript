@@ -8,7 +8,7 @@ export class Empresa {
     this.cnpj = cnpj;
   }
 
-  addFreller (freller: Freeler): void {
+  addFreller(freller: Freeler): void {
     this.freelancers.push(freller);
   }
 
@@ -21,20 +21,20 @@ export class Empresa {
 
 export class MagnoTech extends Empresa {
   constructor() {
-    super('MagnoTech', '00.111.222/0001-44')
+    super('MagnoTech', '00.111.222/0001-44');
   }
 
-  popFreller(): Freeler| null {
+  popFreller(): Freeler | null {
     const freller = this.freelancers.pop();
     if (freller) return freller;
-    return null
+    return null;
   }
 }
 
 export class Freeler {
   constructor(
     readonly nome: string,
-    readonly sobrenome: string
+    readonly sobrenome: string,
   ) {}
 }
 
@@ -49,5 +49,5 @@ filial1.addFreller(freller2);
 filial1.addFreller(freller3);
 
 const frellerremoved = filial1.popFreller();
-console.log('Colaborador removido: \n', frellerremoved, '\n')
+console.log('Colaborador removido: \n', frellerremoved, '\n');
 console.log(filial1);

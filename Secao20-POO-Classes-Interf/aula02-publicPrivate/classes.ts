@@ -1,4 +1,4 @@
-import { pull } from 'lodash';
+// import { pull } from 'lodash';
 
 export class Empresa {
   readonly nome: string; // public não necessário
@@ -12,7 +12,7 @@ export class Empresa {
     this.cnpj = cnpj;
   }
 
-  addFreller (freller: Freeler): void {
+  addFreller(freller: Freeler): void {
     this.freelancers.push(freller);
   }
 
@@ -26,11 +26,10 @@ export class Empresa {
   // }
 }
 
-
 export class Freeler {
   constructor(
-    readonly nome: string,      // public não necessário
-    readonly sobrenome: string  // public não necessário
+    readonly nome: string, // public não necessário
+    readonly sobrenome: string, // public não necessário
   ) {}
 }
 
@@ -50,7 +49,6 @@ filial1.addFreller(freeler3);
 // filial1.freelancers.pop();
 
 console.log(filial1);
-
 
 // console.log(filial1.nome);
 // console.log(filial1.getNome(), filial1.nome, '\n');

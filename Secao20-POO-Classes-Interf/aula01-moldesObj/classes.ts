@@ -8,7 +8,7 @@ export class Empresa {
     this.cnpj = cnpj;
   }
 
-  addFreller (freller: Freeler): void {
+  addFreller(freller: Freeler): void {
     this.freelancers.push(freller);
   }
 
@@ -22,7 +22,7 @@ export class Empresa {
 export class Freeler {
   constructor(
     public readonly nome: string,
-    public readonly sobrenome: string
+    public readonly sobrenome: string,
   ) {}
 }
 
@@ -38,12 +38,9 @@ filial1.addFreller(freeler3);
 console.log(filial1, '\n');
 filial1.mostrarFreller();
 
-
-
 //Forma mais cumprida / Longa
 //   export class Empresa {
 //   public readonly nome: string;
 //   private readonly freelancers: freeler[] = [];
 //   protected readonly cnpj: string;
 // }
-
