@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 export default {
   mode: 'development',
 
-  entry: './aula07-Atributos-metEstaticos/static.ts',
+  entry: './aula15-exercicio-video/video.ts',
 
   module: {
     rules: [
