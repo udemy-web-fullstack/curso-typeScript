@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 export default {
   mode: 'development',
 
-  entry: './aula15-exercicio-video/video.ts',
+  entry: './aula03-chaves-em-tipos/index.ts',
 
   module: {
     rules: [
