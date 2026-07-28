@@ -30,6 +30,9 @@ export default tseslint.config(
       '@typescript-eslint/no-inferrable-types': 'error',
 
       '@typescript-eslint/no-explicit-any': 'warn',
+
+      // Permite até 2 linhas em branco consecutivas
+      'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 0, maxBOF: 0 }],
     },
   },
 
