@@ -3,16 +3,16 @@ function method(
   classPrototype: any,
   nomeMetodo: string,
   descriptor: PropertyDescriptor,
-): PropertyDescriptor {
+): PropertyDescriptor | void {
   console.log(classPrototype);
   console.log(nomeMetodo);
   console.log(descriptor);
-  return {
-    value: function (...args: string[]) {
-      return args[0].toUpperCase();
-    },
-    // writable: false, há época não apresentou erro; hoje sim
-  };
+  // return {
+  //   value: function (...args: string[]) {
+  //     return args[0].toUpperCase();
+  //   },
+  //   writable: false, há época não apresentou erro; hoje sim
+  // };
 }
 
 export class UmaPessoa {
