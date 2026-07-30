@@ -1,0 +1,5 @@
+{
+  "code-runner.executorMap": {
+    "typescript": "cls && .\\node_modules\\.bin\\tsx.cmd $fullFileName"
+  }
+}
